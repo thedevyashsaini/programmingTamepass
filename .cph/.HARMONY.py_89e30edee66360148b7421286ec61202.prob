@@ -1,0 +1,1 @@
+{"name":"Local: HARMONY","url":"/home/tds/Downloads/programming/HARMONY.py","tests":[{"id":1698598074330,"input":"3\n9\n12 3 30 47 22 100 69 100 50\n6\n22 26 62 74 37 26\n7\n51 23 54 84 18 63 6","output":"0\n18\n0.5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/tds/Downloads/programming/HARMONY.py","group":"local","local":true}

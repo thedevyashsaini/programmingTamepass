@@ -1,0 +1,1 @@
+{"name":"Local: somelab","url":"/home/tds/Downloads/programming/somelab.1.c","tests":[{"id":1701231422796,"input":"1 + i1\n2 + i4","output":"3 + i5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/tds/Downloads/programming/somelab.1.c","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: COUNTINGCARDS","url":"/home/tds/Downloads/programming/COUNTINGCARDS.py","tests":[{"id":1698478414313,"input":"2\n1\n37\n3\n9 4 11","output":"Foo\nBar"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/tds/Downloads/programming/COUNTINGCARDS.py","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: somelab","url":"/home/tds/Downloads/programming/somelab.3.py","tests":[{"id":1701232309892,"input":"TheDevyashSaini","output":"a: 2\ne: 2\ni: 2\no: 0\nu: 0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/tds/Downloads/programming/somelab.3.py","group":"local","local":true}
