@@ -1,0 +1,202 @@
+body {
+    background: #4a4b4e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    border-radius: 32px;
+    position: relative;
+    /* transition: 0.5s ease-in-out; */
+    border: 2px solid white;
+    overflow: hidden;
+    font-family: system-ui;;
+}
+
+.card .mail {
+    cursor: pointer;
+    position: absolute;
+    right: 2rem;
+    top: 0.9rem;
+    background: transparent;
+    border: none;
+    color: #fbb9b6;
+    font-size: 1.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+.card .img {
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out, left 0s 5s ease-in-out, top 0s 5s ease-in-out;
+}
+
+.card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 32px;
+    transition: 0.5s ease-in-out;
+}
+
+.card .bottom {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: 60px;
+    border-radius: 32px;
+    /* background: #ffb6b9; */
+    transition: all 0.3s 0.2s ease-in-out, z-index 0.5s;
+}
+
+.card .bottom::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 1px 7px 4px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 32px;
+    pointer-events: none;
+    transition: 0.5s ease-in-out;
+}
+
+.card .bottom .content {
+    height: 0;
+    overflow: hidden;
+    color: #fff;
+    padding: 2.5rem 1.4rem;
+    transition: 0.5s ease-in-out;
+}
+
+.card .bottom .ribbon {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    box-shadow: inset 0 -4px 4px 0 rgba(0, 0, 0, 0.1);
+    transition: 0.5s ease-in-out;
+}
+
+.card .bottom .ribbon .icons {
+    color: #fff;
+    display: flex;
+    justify-content: left;
+    font-size: larger;
+    width: 50%;
+    text-shadow: 1px 1px 3px #4a4b4e36;
+}
+
+.card .bottom .ribbon .icons i {
+    cursor: pointer;
+    margin-left: 1.3rem;
+    transition: 0.2s ease-in-out;
+}
+
+.card .bottom .ribbon .button {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1.3rem;
+    padding: 8px 20px;
+    font-size: small;
+    background: #fff;
+    width: fit-content;
+    border-radius: 20px;
+    color: #000;
+    box-shadow: 1px 3px 8px 0px #0000001c;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover {
+    border-radius: 48px 32px 32px 32px;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover > .bottom .ribbon {
+    border-radius: 32px;
+    background: #fbb9b6;
+}
+
+.card:hover > .bottom .ribbon .button {
+    color: #fbb9b6;
+}
+
+.card:hover > .bottom {
+    z-index: 1;
+    height: 83%;
+    border-radius: 85px 32px 32px 32px;
+    background: #ffb6b9;
+}
+
+.card:hover > .bottom::before {
+    z-index: 1;
+    border-radius: 85px 32px 32px 32px;
+    /* display: none; */
+}
+
+.card:hover > .bottom .content {
+    height: 100%;
+}
+
+.card:hover > .img img {
+    border-radius: 50%;
+    transform: scale(1.4);
+}
+
+.card:hover > .img {
+    height: 28%;
+    width: 28%;
+    position: absolute;
+    border-radius: 50%;
+    border: solid 6px #ffb6b9;
+    top: 2%;
+    left: 2%;
+    z-index: 2;
+    filter: zoom(2);
+    box-shadow: 0px 0px 5px 2px #0000001c;
+}
+
+.card .img:hover {
+    filter: zoom(1);
+}
+
+.card .bottom .icons i:hover, .card .mail:hover {
+    color: #f95a54;
+}
+
+.card .bottom .ribbon .button:hover {
+    color: #fff;
+    background: #f95a54;
+}
+
+/* .card .img:hover {
+    border-radius: 20px;
+    height: 32%;
+    width: 32%;
+    top: -3%;
+    left: -3%;
+} */
+
+.card .img:hover img {
+    border-radius: 20px;
+    transform: scale(1);
+}
