@@ -1,3 +1,4 @@
+// Palin-Primes up to 10^5
 #include <stdio.h>
 
 int isPrime(int n) {
