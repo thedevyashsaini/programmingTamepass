@@ -100,6 +100,7 @@ class ArrayList<T> {
         throw new IllegalArgumentException();
     }
 
+    @SuppressWarnings("unchecked")
     T get(int index) {
         // Returns the item at the specified index
         if (index < 0 || index >= size) {
