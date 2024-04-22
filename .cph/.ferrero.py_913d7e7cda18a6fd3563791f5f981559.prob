@@ -1,0 +1,1 @@
+{"name":"Local: ferrero","url":"/home/tds/Documents/programmingTamepass/ferrero.py","tests":[{"id":1713108989749,"input":"11\n5 1 6 9 5 7 9 8 1 9 1","output":"5\n1 3 6 8 10"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/tds/Documents/programmingTamepass/ferrero.py","group":"local","local":true}
